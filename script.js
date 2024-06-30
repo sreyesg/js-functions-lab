@@ -115,7 +115,7 @@ const maxOfThree = (numA, numB, numC) => {
 }
 
 
-console.log('Exercise 6 Result:', maxOfThree(5, 10, 8));
+// console.log('Exercise 6 Result:', maxOfThree(5, 10, 8));
 /*
 Exercise 7: calculateTip()
 
@@ -155,7 +155,7 @@ const convertTemperature = (temperature, scale) => {
         return (temperature - 32) * 9/5 
     }
 }
-console.log('Exercise 8 Result:', convertTemperature(32, "F"));
+// console.log('Exercise 8 Result:', convertTemperature(32, "F"));
 
 /*
 Exercise 9: basicCalculator()
@@ -185,7 +185,7 @@ const basicCalculator = (numA, numB, operation) => {
     }
 }
 
-console.log('Exercise 9 Result:', basicCalculator(10, 5, "subtract"));
+// console.log('Exercise 9 Result:', basicCalculator(10, 5, "subtract"));
 
 /*
 Exercise 10: calculateGrade()
@@ -217,4 +217,28 @@ const calculateGrade = (score) => {
 }
 
 
-console.log('Exercise 10 Result:', calculateGrade(100));
+// console.log('Exercise 10 Result:', calculateGrade(100));
+
+/*
+Exercise 11: createUsername()
+
+Define a function called createUsername. 
+It should take a first name and a last name and return a username. 
+
+The username should be a combination of the following:
+- The first three letters of the first name.
+- The first three letters of the last name.
+- The total character count of the first and last name combined.
+
+Example: createUsername('Samantha', 'Green') should return 'SamGre12'.
+
+Complete the exercise in the space below:
+*/
+
+const createUsername = (name, lastname) => {
+    
+    totalChar = name+lastname
+    return `${name.substring(0,3)}${lastname.substring(0,3)}${totalChar.length}`
+}
+
+console.log('Exercise 11 Result:', createUsername("Samantha", "Green"));
