@@ -50,20 +50,21 @@ Example: isCharAVowel('a') should return true.
 Complete the exercise in the space below:
 */
 const isCharAVowel = (char) => {
-    const lowercaseAlphabet = [
-        'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
-        'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'
+    const lowercaseVowel = [
+        'a', 'e','i','o', 'u',
     ];
     char.toLowerCase()
     console.log(char)
-    for (i=0; i<lowercaseAlphabet.length; i++){   
-        if (lowercaseAlphabet[i]===char.toLowerCase()) {
+    for (i=0; i<lowercaseVowel.length; i++){   
+        if (lowercaseVowel[i]===char.toLowerCase()) {
             return true
+        }else {
+            return false
         }
     }
 }
-// console.log(isCharAVowel("M"))
-// console.log('Exercise 3 Result:', isCharAVowel("a"));
+console.log(isCharAVowel("s"))
+console.log('Exercise 3 Result:', isCharAVowel("a"));
 
 /*
 Exercise 4: generateEmail()
